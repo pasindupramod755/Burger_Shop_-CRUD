@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-gradient fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-gradient fixed-top bg-black">
         <div class="container">
             <a class="navbar-brand logo" href="#">
                 <i class="fas fa-gem"></i>
@@ -48,15 +48,15 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
-                    <h1 class="display-3 fw-bold mb-4">Delicious Burgers, Anytime You Crave</h1>
+                    <h1 class="display-3 fw-bold mb-4">Delicious Burgers Anytime You Crave</h1>
                     <p class="lead mb-5">“Discover juicy, handcrafted burgers with the perfect blend of flavors. Fresh
                         ingredients, bold taste, and happiness in every bite.”</p>
                     <div class="d-flex gap-3 justify-content-center">
-                        <button class="btn btn-primary btn-lg">
-                            <i class="fas fa-rocket me-2"></i>
-                            Order Now
-                        </button>
-                        <button class="btn btn-outline-light btn-lg">
+                        <a href="#product"><button class="btn btn-primary btn-lg orderBtn">
+                                <i class="fas fa-rocket me-2"></i>
+                                Order Now
+                            </button></a>
+                        <button class="btn btn-outline-light btn-lg orderBtn">
                             Learn More
                         </button>
                     </div>
@@ -66,7 +66,7 @@
     </section>
 
     <div class="container py-5" id="product">
-        <h1 class="text-center mb-5">Burgers</h1>
+        <h1 class="text-center mb-5 p-3">Burgers</h1>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <div class="col">
                 <div class="card h-100">
@@ -76,6 +76,7 @@
                         <p class="card-text">Crispy bacon strips layered over juicy beef, <br> cheddar cheese, lettuce,
                             and
                             tangy smoky barbecue sauce.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.1120.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -87,6 +88,7 @@
                         <h5 class="card-title fw-bold">BBQ Smokehouse Burger</h5>
                         <p class="card-text">Grilled beef patty with smoky barbecue sauce, cheddar cheese, crispy
                             onions, lettuce, and toasted brioche bun.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.1250.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -98,6 +100,7 @@
                         <h5 class="card-title fw-bold">Chicken Crispy Burger</h5>
                         <p class="card-text">Golden fried chicken fillet, crunchy lettuce, fresh tomato, tangy mayo, and
                             soft toasted sesame seed bun.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.1300.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -109,6 +112,7 @@
                         <h5 class="card-title fw-bold">Classic Cheeseburger</h5>
                         <p class="card-text">Juicy beef patty topped with melted cheddar, fresh lettuce, tomato,
                             pickles, and creamy house-made sauce.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.1250.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -120,6 +124,7 @@
                         <h5 class="card-title fw-bold">Double Beef Stack</h5>
                         <p class="card-text">Two grilled patties stacked high with cheese, onions, pickles, and smoky
                             sauce for ultimate flavor satisfaction.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.1000.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -132,6 +137,7 @@
                         <p class="card-text">Crispy fish fillet with tartar sauce, <br> fresh lettuce, tomato slices,
                             and
                             fluffy soft toasted burger bun.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.1150.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -144,6 +150,7 @@
                         <p class="card-text">Sautéed mushrooms with Swiss cheese, <br> caramelized onions, juicy beef
                             patty,
                             and creamy garlic aioli sauce.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.1450.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -156,6 +163,7 @@
                         <p class="card-text">Fiery jalapeños, pepper jack cheese, <br> spicy chipotle mayo, and crisp
                             lettuce
                             for a bold flavorful punch.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.1500.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -167,6 +175,7 @@
                         <h5 class="card-title fw-bold">Veggie Garden Burger</h5>
                         <p class="card-text">Healthy grilled veggie patty with avocado, fresh greens, tomatoes,
                             cucumber, and creamy herb-flavored dressing.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.1650.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -183,7 +192,9 @@
                     <img src="assets/image/Classic Cola.jpg" class="card-img-top" alt="Product 1">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Classic Cola</h5>
-                        <p class="card-text">Refreshing fizzy cola with bold taste, perfectly paired with burgers for the ultimate combo.</p>
+                        <p class="card-text">Refreshing fizzy cola with bold taste, perfectly paired with burgers for
+                            the ultimate combo.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.250.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -193,7 +204,9 @@
                     <img src="assets/image/Icy Lemonade.jpg" class="card-img-top" alt="Product 2">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Icy Lemonade</h5>
-                        <p class="card-text">Freshly squeezed lemon juice blended with ice, sugar, and soda for a tangy chill.</p>
+                        <p class="card-text">Freshly squeezed lemon juice blended with ice, sugar, and soda for a tangy
+                            chill.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.350.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -203,7 +216,9 @@
                     <img src="assets/image/Mint Mojito.jpg" class="card-img-top" alt="Product 3">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Mint Mojito</h5>
-                        <p class="card-text">Cool mint leaves mixed with lime and soda, giving a crisp and refreshing taste.</p>
+                        <p class="card-text">Cool mint leaves mixed with lime and soda, giving a crisp and refreshing
+                            taste.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.350.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -213,7 +228,9 @@
                     <img src="assets/image/Berry Blast.jpg" class="card-img-top" alt="Product 3">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Berry Blast</h5>
-                        <p class="card-text">A fruity mix of strawberries, blueberries, and raspberries blended into a sweet icy drink.</p>
+                        <p class="card-text">A fruity mix of strawberries, blueberries, and raspberries blended into a
+                            sweet icy drink.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.450.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -223,7 +240,9 @@
                     <img src="assets/image/Tropical Mango Shake.jpg" class="card-img-top" alt="Product 3">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Tropical Mango Shake</h5>
-                        <p class="card-text">Creamy mango shake with rich flavor, served chilled for a tropical burger-time delight.</p>
+                        <p class="card-text">Creamy mango shake with rich flavor, served chilled for a tropical
+                            burger-time delight.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.600.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>
@@ -233,7 +252,9 @@
                     <img src="assets/image/Chocolate Milkshake.jpg" class="card-img-top" alt="Product 3">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Chocolate Milkshake</h5>
-                        <p class="card-text">Smooth chocolate blended with ice cream and milk, a sweet treat alongside juicy burgers.</p>
+                        <p class="card-text">Smooth chocolate blended with ice cream and milk, a sweet treat alongside
+                            juicy burgers.</p>
+                        <h4 class="card-title fw-bold text-success">Rs.750.00</h4>
                         <button class="btn btn-primary">Buy Now</button>
                     </div>
                 </div>

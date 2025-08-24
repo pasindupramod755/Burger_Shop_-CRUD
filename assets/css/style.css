@@ -1,8 +1,17 @@
-        .hero-1 {
-            height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url('https://wallpaperbat.com/img/497232-burger-wallpaper-top-free-burger-background.jpg');
-            background-attachment: fixed;
-            background-position: center;
-            background-size: cover;
-        }
+.hero-1 {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://wallpaperbat.com/img/497232-burger-wallpaper-top-free-burger-background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.orderBtn:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+body{
+    background: linear-gradient(135deg, #ff4e50, #ff6f00, #f9d423, #56ab2f, #4e342e);
+}
