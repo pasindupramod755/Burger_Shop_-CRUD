@@ -7,13 +7,13 @@
     background-size: cover;
 }
 
-.orderBtn:hover{
+.orderBtn:hover {
     scale: 1.1;
     transition: 0.5s;
 }
 
-body{
-    background: linear-gradient(135deg, #ff4e50, #ff6f00, #f9d423, #56ab2f, #4e342e);
+body {
+    background: linear-gradient(135deg, #3f2f30, #412e1f, #64604a, #394932, #392d2a);
 }
 
 
@@ -30,8 +30,14 @@ footer {
     background-color: #343a40;
     color: #fff;
     padding: 3rem 0;
-  }
+}
 
-  .social-icons a {
+.social-icons a {
     font-size: 1.25rem;
-  }
+}
+
+
+.footerIcon:hover {
+    scale: 1.2;
+    transition: 0.5s;
+}
