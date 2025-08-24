@@ -15,3 +15,23 @@
 body{
     background: linear-gradient(135deg, #ff4e50, #ff6f00, #f9d423, #56ab2f, #4e342e);
 }
+
+
+.hero-2 {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://www.thedailymeal.com/img/gallery/the-best-fictional-burgers-ranked/l-intro-1663172448.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 3rem 0;
+  }
+
+  .social-icons a {
+    font-size: 1.25rem;
+  }
