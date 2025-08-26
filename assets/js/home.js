@@ -2,6 +2,7 @@ const cartArray = [
 
 ]
 
+
 function buyNow(id) {
     let price = parseFloat(document.getElementById("price" + id.substring(3)).innerText.substring(3));
     let image = document.getElementById("image" + id.substring(3)).src
@@ -19,7 +20,6 @@ function buyNow(id) {
     const stringifyArray = JSON.stringify(cartArray)
     localStorage.setItem("dataArray", stringifyArray);
     console.log(JSON.parse(localStorage.getItem("dataArray"))[0])
-
 }
 
 

@@ -5,13 +5,14 @@ let dataArrayObj = JSON.parse(localStorage.getItem("dataArray"));
 console.log(dataArrayObj.length);
 document.getElementById("countItem").innerText = dataArrayObj.length + " Items";
 let lastPrice = 0;
+cartUpdate();
 
 
-
-for (let i = 0; i < dataArrayObj.length; i++) {
-    lastPrice = lastPrice + dataArrayObj[i].price;
-    let cartItem = document.createElement("div")
-    cartItem.innerHTML = `
+function cartUpdate() {
+    for (let i = 0; i < dataArrayObj.length; i++) {
+        lastPrice = lastPrice + dataArrayObj[i].price;
+        let cartItem = document.createElement("div")
+        cartItem.innerHTML = `
     <hr class="my-4">
     <div class="row mb-4 d-flex justify-content-between align-items-center">
         <div class="col-md-2 col-lg-2 col-xl-2">
@@ -42,9 +43,12 @@ for (let i = 0; i < dataArrayObj.length; i++) {
     </div>
 `
 
-    let newOne = document.getElementById("cartLoad")
+        let newOne = document.getElementById("cartLoad")
 
-    newOne.appendChild(cartItem);
-    document.getElementById("totalPrice").innerText = "Rs."+lastPrice+".00";
+        newOne.appendChild(cartItem);
+        document.getElementById("totalPrice").innerText = "Rs." + lastPrice + ".00";
+        console.log(document.getElementById("form1"))
+
+    }
 
 }
