@@ -10,7 +10,6 @@ cartUpdate();
 
 function cartUpdate() {
     for (let i = 0; i < dataArrayObj.length; i++) {
-        lastPrice = lastPrice + dataArrayObj[i].price;
         let cartItem = document.createElement("div")
         cartItem.innerHTML = `
     <hr class="my-4">
@@ -35,19 +34,20 @@ function cartUpdate() {
             </button>
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-            <h6 class="mb-0">Rs.${dataArrayObj[i].price}.00</h6>
+            <h6 class="mb-0" id="packgePrice${i}" >Rs.${dataArrayObj[i].price}.00</h6>
         </div>
         <div class="col-md-1 col-lg-1 col-xl-1 text-end">
             <a href="#!" class="text-danger"><img src="assets/image/trash.svg" alt="" width="25"></a>
         </div>
     </div>
 `
-
         let newOne = document.getElementById("cartLoad")
 
         newOne.appendChild(cartItem);
         document.getElementById("totalPrice").innerText = "Rs." + lastPrice + ".00";
-        console.log(document.getElementById("form1"))
+        lastPrice = lastPrice + parseInt(document.getElementById("packgePrice" + i).innerText.substring(3));
+        console.log(parseInt(document.getElementById("form1").value));
+        
 
     }
 

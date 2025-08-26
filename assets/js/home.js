@@ -19,6 +19,7 @@ function buyNow(id) {
     console.log(cartArray);
     const stringifyArray = JSON.stringify(cartArray)
     localStorage.setItem("dataArray", stringifyArray);
+    alert("Add this Cart");
     console.log(JSON.parse(localStorage.getItem("dataArray"))[0])
 }
 
