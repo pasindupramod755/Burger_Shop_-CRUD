@@ -1,11 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <h1>Burger Shop</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-gradient fixed-top bg-black">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">
+                <i class="fas fa-gem"></i>
+                Burger Hut
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav2">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light ms-2" href="cart.html">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-1 d-flex align-items-center justify-content-center text-white">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <h1 class="display-3 fw-bold mb-4">Delicious Burgers Anytime You Crave</h1>
+                    <p class="lead mb-5">“Discover juicy, handcrafted burgers with the perfect blend of flavors. Fresh
+                        ingredients, bold taste, and happiness in every bite.”</p>
+                    <div class="d-flex gap-3 justify-content-center">
+                        <a href="#product"><button class="btn btn-primary btn-lg orderBtn">
+                                <i class="fas fa-rocket me-2"></i>
+                                Order Now
+                            </button></a>
+                        <button class="btn btn-outline-light btn-lg orderBtn">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-5" id="product">
+        <h1 class="text-center mb-5 p-3 text-white">Burgers</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/image/Bacon Lover’s Burger.jpg" class="card-img-top" alt="Product 1" id="image1">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name1">Bacon Lover’s Burger</h5>
+                        <p class="card-text">Crispy bacon strips layered over juicy beef, <br> cheddar cheese, lettuce,
+                            and
+                            tangy smoky barbecue sauce.</p>
+                        <h4 class="card-title fw-bold text-success" id="price1">Rs.1120.00</h4>
+                        <button class="btn btn-primary" id="buy1" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/image/BBQ Smokehouse Burger.jpg" class="card-img-top" alt="Product 2" id="image2">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name2">BBQ Smokehouse Burger</h5>
+                        <p class="card-text">Grilled beef patty with smoky barbecue sauce, cheddar cheese, crispy
+                            onions, lettuce, and toasted brioche bun.</p>
+                        <h4 class="card-title fw-bold text-success" id="price2">Rs.1250.00</h4>
+                        <button class="btn btn-primary" id="buy2" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="zoom-out-up">
+                <div class="card h-100">
+                    <img src="assets/image/Chicken Crispy Burger.jpg" class="card-img-top" alt="Product 3" id="image3">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name3">Chicken Crispy Burger</h5>
+                        <p class="card-text">Golden fried chicken fillet, crunchy lettuce, fresh tomato, tangy mayo, and
+                            soft toasted sesame seed bun.</p>
+                        <h4 class="card-title fw-bold text-success" id="price3">Rs.1300.00</h4>
+                        <button class="btn btn-primary" id="buy3" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="zoom-out-up">
+                <div class="card h-100">
+                    <img src="assets/image/Classic Cheeseburger.jpg" class="card-img-top" alt="Product 3" id="image4">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name4">Classic Cheeseburger</h5>
+                        <p class="card-text">Juicy beef patty topped with melted cheddar, fresh lettuce, tomato,
+                            pickles, and creamy house-made sauce.</p>
+                        <h4 class="card-title fw-bold text-success" id="price4">Rs.1250.00</h4>
+                        <button class="btn btn-primary" id="buy4" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/image/Double Beef Stack.jpg" class="card-img-top" alt="Product 3" id="image5">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name5">Double Beef Stack</h5>
+                        <p class="card-text">Two grilled patties stacked high with cheese, onions, pickles, and smoky
+                            sauce for ultimate flavor satisfaction.</p>
+                        <h4 class="card-title fw-bold text-success" id="price5">Rs.1000.00</h4>
+                        <button class="btn btn-primary" id="buy5" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/image/Fish Fillet Burger.jpg" class="card-img-top" alt="Product 3" id="image6">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name6">Fish Fillet Burger</h5>
+                        <p class="card-text">Crispy fish fillet with tartar sauce, <br> fresh lettuce, tomato slices,
+                            and
+                            fluffy soft toasted burger bun.</p>
+                        <h4 class="card-title fw-bold text-success" id="price6">Rs.1150.00</h4>
+                        <button class="btn btn-primary" id="buy6" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="zoom-out-up">
+                <div class="card h-100">
+                    <img src="assets/image/Mushroom Swiss Burger.jpg" class="card-img-top" alt="Product 3" id="image7">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name7">Mushroom Swiss Burger</h5>
+                        <p class="card-text">Sautéed mushrooms with Swiss cheese, <br> caramelized onions, juicy beef
+                            patty,
+                            and creamy garlic aioli sauce.</p>
+                        <h4 class="card-title fw-bold text-success" id="price7">Rs.1450.00</h4>
+                        <button class="btn btn-primary" id="buy7" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="zoom-out-up">
+                <div class="card h-100">
+                    <img src="assets/image/Spicy Jalapeño Burger.jpg" class="card-img-top" alt="Product 3" id="image8">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name8">Spicy Jalapeño Burger</h5>
+                        <p class="card-text">Fiery jalapeños, pepper jack cheese, <br> spicy chipotle mayo, and crisp
+                            lettuce
+                            for a bold flavorful punch.</p>
+                        <h4 class="card-title fw-bold text-success" id="price8">Rs.1500.00</h4>
+                        <button class="btn btn-primary" id="buy8" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="zoom-out-up">
+                <div class="card h-100">
+                    <img src="assets/image/Veggie Garden Burger.jpg" class="card-img-top" alt="Product 3" id="image9">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name9">Veggie Garden Burger</h5>
+                        <p class="card-text">Healthy grilled veggie patty with avocado, fresh greens, tomatoes,
+                            cucumber, and creamy herb-flavored dressing.</p>
+                        <h4 class="card-title fw-bold text-success" id="price9">Rs.1650.00</h4>
+                        <button class="btn btn-primary" id="buy9" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container py-5">
+        <h1 class="text-center mb-5 text-white">Cool Drinks</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/image/Classic Cola.jpg" class="card-img-top" alt="Product 1" id="image10">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name10">Classic Cola</h5>
+                        <p class="card-text">Refreshing fizzy cola with bold taste, perfectly paired with burgers for
+                            the ultimate combo.</p>
+                        <h4 class="card-title fw-bold text-success" id="price10">Rs.250.00</h4>
+                        <button class="btn btn-primary" id="buy10" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/image/Icy Lemonade.jpg" class="card-img-top" alt="Product 2" id="image11">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name11">Icy Lemonade</h5>
+                        <p class="card-text">Freshly squeezed lemon juice blended with ice, sugar, and soda for a tangy
+                            chill.</p>
+                        <h4 class="card-title fw-bold text-success" id="price11">Rs.350.00</h4>
+                        <button class="btn btn-primary" id="buy11" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="zoom-out-up">
+                <div class="card h-100">
+                    <img src="assets/image/Mint Mojito.jpg" class="card-img-top" alt="Product 3" id="image12">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name12">Mint Mojito</h5>
+                        <p class="card-text">Cool mint leaves mixed with lime and soda, giving a crisp and refreshing
+                            taste.</p>
+                        <h4 class="card-title fw-bold text-success" id="price12">Rs.350.00</h4>
+                        <button class="btn btn-primary" id="buy12" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-aos="zoom-out-up">
+                <div class="card h-100">
+                    <img src="assets/image/Berry Blast.jpg" class="card-img-top" alt="Product 3" id="image13">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name13">Berry Blast</h5>
+                        <p class="card-text">A fruity mix of strawberries, blueberries, and raspberries blended into a
+                            sweet icy drink.</p>
+                        <h4 class="card-title fw-bold text-success" id="price13">Rs.450.00</h4>
+                        <button class="btn btn-primary" id="buy13" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/image/Tropical Mango Shake.jpg" class="card-img-top" alt="Product 3" id="image14">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name14">Tropical Mango Shake</h5>
+                        <p class="card-text">Creamy mango shake with rich flavor, served chilled for a tropical
+                            burger-time delight.</p>
+                        <h4 class="card-title fw-bold text-success" id="price14">Rs.600.00</h4>
+                        <button class="btn btn-primary" id="buy14" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/image/Chocolate Milkshake.jpg" class="card-img-top" alt="Product 3" id="image15">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" id="name15">Chocolate Milkshake</h5>
+                        <p class="card-text">Smooth chocolate blended with ice cream and milk, a sweet treat alongside
+                            juicy burgers.</p>
+                        <h4 class="card-title fw-bold text-success" id="price15">Rs.750.00</h4>
+                        <button class="btn btn-primary" id="buy15" onclick="buyNow(this.id)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero-2" id="aboutUs">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <h1 class="display-3 fw-bold mb-4 text-white m-5 p-3">About Burger Hut</h1>
+                    <p class="lead mb-5 text-white m-5 fs-3">“At <b>Burger Hut</b>, we serve more than just burgers – we
+                        serve happiness!
+                        From sizzling patties to creamy shakes, every bite is crafted with love,
+                        fresh ingredients, and a passion for flavor. Whether you crave classic tastes
+                        or bold new creations, Burger Hut is your go-to spot for ultimate satisfaction.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Location</h5>
+                    <p>123 Main Street, Colombo, Sri Lanka</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-white">Home</a></li>
+                        <li><a href="#product" class="text-decoration-none text-white">Product</a></li>
+                        <li><a href="#" class="text-decoration-none text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Follow Us</h5>
+                    <ul class="list-inline social-icons">
+                        <li class="list-inline-item footerIcon"><a href="#" class="text-white"><i
+                                    class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item footerIcon"><a href="#" class="text-white"><i
+                                    class="bi bi-whatsapp"></i></a>
+                        </li>
+                        <li class="list-inline-item footerIcon"><a href="#" class="text-white"><i
+                                    class="bi bi-geo-alt-fill"></i></a>
+                        </li>
+                        <li class="list-inline-item footerIcon"><a href="#" class="text-white"><i
+                                    class="bi bi-tiktok"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2025 Burger Hut. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/home.js"></script>
+
 </body>
+
 </html>
