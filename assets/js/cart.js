@@ -43,3 +43,12 @@ function removeItem(index) {
     localStorage.setItem("cartArray", JSON.stringify(dataArrayObj));
     cartUpdate();
 }
+
+function buyNow(){
+    for (let i = 0; i < dataArrayObj.length; i++) {
+       dataArrayObj.splice(i);
+       localStorage.setItem("cartArray", JSON.stringify(dataArrayObj));
+       alert("🎉 Purchase successful! Thank you for your order.");
+    }
+    cartUpdate();
+}
