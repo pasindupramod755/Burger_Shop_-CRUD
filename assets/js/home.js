@@ -8,12 +8,14 @@ function buyNow(id) {
     let name = document.getElementById("name" + index).innerText;
 
 
-    const addNew = { name, price, image };
-
+    const addNew = {
+        name,
+        price,
+        image
+    };
 
     let cart = JSON.parse(localStorage.getItem("cartArray") || "[]");
-
-
+    
     cart.push(addNew);
 
     localStorage.setItem("cartArray", JSON.stringify(cart));
